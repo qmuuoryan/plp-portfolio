@@ -6,11 +6,9 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     
-   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan</title>
-    
 </head>
 <body>
     <div class="container">
@@ -19,7 +17,6 @@
             <div class="profile-section">
                 <div class="profile-image">
                     <img src="images/ryan.jpg" alt="Ryan Muuo" style="width: 100%; height: 100%; border-radius: 50%;">
-
                 </div>
                 <h1 class="profile-name">Ryan Muuo</h1>
                 <p class="profile-title">Software Engineer</p>
@@ -67,22 +64,23 @@
 
         
         <div class="main-content">
+           
             <nav class="navigation">
-                <a href="#about" class="nav-item active" onclick="showSection('about')">About</a>
-                <a href="#resume" class="nav-item" onclick="showSection('resume')">Resume</a>
-                <a href="#portfolio" class="nav-item" onclick="showSection('portfolio')">Portfolio</a>
-                <a href="#contact" class="nav-item" onclick="showSection('contact')">Contact</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#resume" class="nav-item">Resume</a>
+                <a href="#portfolio" class="nav-item">Portfolio</a>
+                <a href="#contact" class="nav-item">Contact</a>
             </nav>
 
-            
-            <section id="about" class="section active">
+           
+            <section id="about" class="section">
                 <h2 class="section-title">About Me</h2>
                 <div class="section-subtitle"></div>
                 
                 <div class="about-content">
-                    <p>A passionate Backend and  Flutter developer with strong expertise in cross-platform apps, REST APIs, UI/UX, widgets, and state management solutions. Proven track record in delivering cutting-edge solutions, including API integration, third-party libraries, and performance optimization. Adept at debugging to ensure high-quality, responsive apps and an agile collaborator committed to staying current with industry trends.</p>
+                    <p>A passionate Backend and Flutter developer with strong expertise in cross-platform apps, REST APIs, UI/UX, widgets, and state management solutions. Proven track record in delivering cutting-edge solutions, including API integration, third-party libraries, and performance optimization. Adept at debugging to ensure high-quality, responsive apps and an agile collaborator committed to staying current with industry trends.</p>
                     
-                    <p>If you're seeking a skilled Flutter  and python developer to breathe life into your project and exceed your expectations, I am here to collaborate and create magic together. Reach out, and let's transform your vision into a reality!</p>
+                    <p>If you're seeking a skilled Flutter and python developer to breathe life into your project and exceed your expectations, I am here to collaborate and create magic together. Reach out, and let's transform your vision into a reality!</p>
                 </div>
 
                 <h3 style="font-size: 24px; margin-bottom: 30px;">What I'm Doing</h3>
@@ -136,17 +134,13 @@
                         <i class="devicon-git-plain colored"></i>
                     </div>
                 </div>
-
-
             </section>
 
-            
             <section id="resume" class="section">
                 <h2 class="section-title">Resume</h2>
                 <div class="section-subtitle"></div>
 
-                
-                <a href="docs/ryan-CV.docx" class="download-cv-btn" onclick="downloadCV()">
+                <a href="docs/ryan-CV.docx" class="download-cv-btn" download="Ryan_Muuo_CV.docx">
                     <svg class="download-icon" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
                     </svg>
@@ -171,33 +165,35 @@
                     <h3>Experience</h3>
                     <div class="resume-item">
                         <h4>Mid-Level Flutter Developer</h4>
-                        <div class="company"> Senior Project</div>
+                        <div class="company">Senior Project</div>
                         <div class="date">May 2025 — Present</div>
                         
                         <ul>
                             <li>Developed new features and implemented UI designs into code using Flutter.</li>
                             <li>Designed and created custom e-form features including scrolling features and data entries.</li>
-                            <li>Integrated Google  for user authentication.</li>
+                            <li>Integrated Google for user authentication.</li>
                             <li>Designed dynamic functionalities using Flutter and Django</li>
                             <li>Integrated APIs for seamless data communication and backend functionality.</li>
                             <li>Collaborated with another developer to deliver features.</li>
                             <li>Ensured smooth functionality and user-friendly experiences throughout the app.</li>
-                            
                         </ul>
                     </div>
                 </div>
             </section>
 
-            
             <section id="portfolio" class="section">
                 <h2 class="section-title">Portfolio</h2>
                 <div class="section-subtitle"></div>
 
                 <div class="portfolio-filters">
-                    <button class="filter-btn active" onclick="filterProjects('all')">All</button>
-                    <button class="filter-btn" onclick="filterProjects('applications')">Applications</button>
-                    <button class="filter-btn" onclick="filterProjects('web')">Web development</button>
+                    <input type="radio" id="filter-all" name="portfolio-filter" checked>
+                    <label for="filter-all" class="filter-btn">All</label>
                     
+                    <input type="radio" id="filter-applications" name="portfolio-filter">
+                    <label for="filter-applications" class="filter-btn">Applications</label>
+                    
+                    <input type="radio" id="filter-web" name="portfolio-filter">
+                    <label for="filter-web" class="filter-btn">Web development</label>
                 </div>
 
                 <div class="portfolio-grid">
@@ -215,7 +211,7 @@
                     <div class="portfolio-item" data-category="web">
                         <div class="portfolio-image">
                             <a href="https://health-system-20ad.onrender.com/" target="_blank" rel="noopener noreferrer">
-                                <img src="images/health.jpg" alt="SPMS Screenshot">
+                                <img src="images/health.jpg" alt="Health App Screenshot">
                             </a>
                         </div>
                         <div class="portfolio-content">
@@ -234,65 +230,40 @@
                             <p class="portfolio-category">Web Development</p>
                         </div>
                     </div>
-                    </div>
-                </div>            
-
-
-
+                </div>
             </section>
+
             <section id="contact" class="section">
                 <h2 class="section-title">Get in Touch</h2>
                 <div class="section-subtitle"></div>
             
-                <form id="contact-form" class="contact-form">
+                <form class="contact-form" action="mailto:Ryanmuuo91@gmail.com" method="post" enctype="text/plain">
                     <div class="form-row">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             
-                
-                <div id="toast" style="
-                    position: fixed;
-                    bottom: 30px;
-                    right: 30px;
-                    background: #4ecdc4;
-                    color: #fff;
-                    padding: 15px 20px;
-                    border-radius: 10px;
-                    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-                    display: none;
-                    z-index: 9999;
-                    font-weight: 600;
-                ">Message sent successfully!</div>
-            
-                
                 <div class="map-container" style="margin-top: 40px;">
                     <iframe
                         width="100%"
                         height="300"
                         frameborder="0"
                         style="border:0; border-radius: 15px;"
-                        src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Nairobi+Kenya"
+                       
                         allowfullscreen>
                     </iframe>
                 </div>
             </section>
         </div>
-    
-    
     </div>
-    
-    
-
-
-
-</body>                                 
+</body>
+</html>
